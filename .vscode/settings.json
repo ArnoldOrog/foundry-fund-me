@@ -1,0 +1,9 @@
+{
+  "solidity.defaultCompiler": "remote",
+  "solidity.linter": "solhint",
+  "solidity.compileUsingRemoteVersion": "v0.8.19+commit.7dd6d404",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "CodeGPT.apiKey": "Ollama"
+}
