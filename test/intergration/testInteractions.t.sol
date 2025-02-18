@@ -5,7 +5,7 @@ pragma solidity ^0.8.19;
 import {FundMe} from "../../src/FundMe.sol";
 import {Test, console} from "forge-std/Test.sol";
 import {DeployFundMe} from "../../script/DeployFundMe.s.sol";
-import {FundFundMe, WithdrawFundMe} from '../../script/Interactions.s.sol';
+import {FundFundMe, WithdrawFundMe} from "../../script/Interactions.s.sol";
 
 contract testInteractions is Test {
     FundMe fundme;
@@ -21,7 +21,7 @@ contract testInteractions is Test {
         vm.deal(USER, START_VALUE);
     }
 
-  function testUserCanFundAndOwnerWithdraw() public  {
+    function testUserCanFundAndOwnerWithdraw() public {
         uint256 preUserBalance = address(USER).balance;
         uint256 preOwnerBalance = address(fundme.getOwner()).balance;
 
